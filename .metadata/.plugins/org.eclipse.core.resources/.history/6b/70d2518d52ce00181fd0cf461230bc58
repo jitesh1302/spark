@@ -1,0 +1,67 @@
+package jitesh.spark
+
+import org.apache.spark.SparkContext
+import org.apache.spark.SparkConf
+import org.apache.spark.sql
+object wordcount {
+  
+
+ def main(args: Array[String]) {
+
+   
+ val conf = new SparkConf()
+ .setAppName("WordCount")
+ val sc = new SparkContext(conf);
+  //val sparkSession = SparkSession.builder
+ val sqlContext = new org.apache.spark.sql.SQLContext(sc);
+ 
+val df = sqlContext.read
+    .format("csv")
+.option("header","true")
+.option ("nullvalue","NA")
+.option ("timestampFormat","yyyy-MM-dd'T'HH:mm:ss")
+.option("mode","failfast")
+.load("/home/ubuntu/survey.csv") 
+
+df.registerTempTable("Temp")  
+val time = org.apache.spark.sql.functions.current_timestamp()
+val df1 = sqlContext.sql("select * ,  $time  as timestamp  from temp ")//registerTempTable("temp")
+				
+//val df1 = df.withColumn("TimeStamp",org.apache.spark.sql.functions.current_timestamp());
+
+df1.write 
+		.format("csv")
+		.option ("timestampFormat","yyyy-MM-dd'T'HH:mm:ss")
+		.mode("overwrite")
+		.save ("/home/ubuntu/Jitesh")
+  
+/*
+    
+val df = spark.read 
+                .format("csv").schema(surveyschema)
+.option("header","true")
+.option ("nullvalue",NA)
+.option ("timestampFormat","yyyy-MM-dd'T'HH:mm:ss")
+.option("mode","failfast")
+.load("/home/jitesh/spark/hospitalsurvey.csv) 
+				
+    
+    
+    
+*/
+ 
+/*
+ 
+ val path = "/Users/xxx/Downloads/usermsg.csv"
+val base_df = sparkSession.read.option("header","true")
+
+
+
+val df1 = df.withColumn("newCol",org.apache.spark.sql.functions.current_timestamp());
+
+//df1.write.format("com.databricks.spark.csv").op
+*/
+//stop the spark context
+ sc.stop
+ }
+}

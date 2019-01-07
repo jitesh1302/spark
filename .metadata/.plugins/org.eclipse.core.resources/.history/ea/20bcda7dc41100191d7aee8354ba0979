@@ -1,0 +1,112 @@
+package jitesh.spark
+import org.apache.spark.SparkContext
+import org.apache.spark.SparkConf
+import org.apache.spark.streaming.StreamingContext
+import org.apache.spark.streaming.Seconds
+import twitter4j.conf.ConfigurationBuilder
+import twitter4j.auth.OAuthAuthorization
+import twitter4j.Status
+import org.apache.spark.streaming.twitter.TwitterUtils
+import java.sql.{ Connection, DriverManager }
+import org.apache.spark.sql
+import org.apache.spark.sql.functions.lit
+import org.apache.spark.sql.Column
+
+object tweet {
+  
+  val sc = new SparkConf().setAppName("streamtwitter").set("spark.driver.allowMultipleContexts", "true");
+  val conf = new SparkContext(sc)
+  val sqlContext= new org.apache.spark.sql.SQLContext(conf)
+  
+
+  val url = "jdbc:mysql://localhost:3306/demo?user=demo&password=demo"
+  val driver = "com.mysql.cj.jdbc.Driver"
+  val username = "demo"
+  val password = "demo"
+  var connection: Connection = _
+
+  def main(args: Array[String]) {
+    if (args.length < 4) {
+      System.err.println("Usage: TwitterData <ConsumerKey><ConsumerSecret><accessToken><accessTokenSecret>" +
+        "[<filters>]")
+      System.exit(1)
+    }
+    val appName = "TwitterData"
+    val conf = new SparkConf()
+    conf.setAppName(appName).setMaster("local[2]")
+    val ssc = new StreamingContext(conf, Seconds(5))
+    val Array(consumerKey, consumerSecret, accessToken, accessTokenSecret) = args.take(4)
+    val filters = args.takeRight(args.length - 4)
+    val cb = new ConfigurationBuilder
+    cb.setDebugEnabled(true).setOAuthConsumerKey(consumerKey)
+      .setOAuthConsumerSecret(consumerSecret)
+      .setOAuthAccessToken(accessToken)
+      .setOAuthAccessTokenSecret(accessTokenSecret)
+    val auth = new OAuthAuthorization(cb.build)
+    val tweets = TwitterUtils.createStream(ssc, Some(auth), filters)
+    
+    
+    
+    val data = tweets.map {status => 
+      val places = status.getPlace
+      val id = status.getUser.getId
+      val date = status.getUser.getCreatedAt.toString()
+      val user = status.getUser.getName()
+      val place = places.getCountry()
+
+      (id,date,user,place)
+      }
+    data.foreachRDD{rdd =>
+      //import spark.implicits._
+      import sqlContext.implicits._
+      rdd.toDF("id","date","user","place").show()
+    }
+
+
+    /* tweet_print = tweets.map(tuple => "%s,%s,%s,%s,%s".format(
+      tuple.getId,
+      tuple.getCreatedAt, tuple.getSource, tuple.getText.toLowerCase.replaceAll(",", " "), tuple.getGeoLocation)).print
+
+ 
+    val strm = tweets.foreachRDD { rdd =>
+      if (!rdd.isEmpty) {
+        rdd.foreachPartition {
+
+          it =>
+
+            if (!it.isEmpty) {
+
+              val conn = DriverManager.getConnection(url, username, password)
+              /*
+          val text = it.map(tuple => tuple.getText)
+          val id = it.map(tuple => tuple.getId)
+          val created_at = it.map(tuple => tuple.getCreatedAt)
+          val source = it.map(tuple => tuple.getSource)
+          val geo = it.map(tuple => tuple.getGeoLocation)
+          * */
+
+              val del = conn.prepareStatement("INSERT INTO tweetstable (ID,CreatedAt,Source,Text,GeoLocation) VALUES (?,?,?,?,?)")
+
+              for (tuple <- it) {
+                del.setLong(1, tuple.getId)
+                del.setString(2, tuple.getCreatedAt.toString)
+                del.setString(3, tuple.getSource)
+                del.setString(4, tuple.getText)
+                del.setString(5, tuple.getGeoLocation.toString)
+                // }
+                del.executeUpdate()
+                del.close()
+                 conn.close()
+                
+              }
+            }
+        }
+      }
+    }
+    
+    */
+
+    ssc.start()
+    ssc.awaitTermination()
+  }
+}

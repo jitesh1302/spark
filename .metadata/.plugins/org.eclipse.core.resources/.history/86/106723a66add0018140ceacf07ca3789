@@ -1,0 +1,21 @@
+package jitesh.spark.stream
+import org.apache.spark.SparkConf
+import org.apache.streaming .
+
+object file {
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+val sparkConf = new SparkConf().setAppName("HBaseStream")
+//  create a StreamingContext, the main entry point for all streaming functionality
+val ssc = new org.apache.StreamingContext(sparkConf, Seconds(2))
+  
+}

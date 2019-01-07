@@ -1,0 +1,1355 @@
+!SESSION 2018-11-22 16:50:43.029 -----------------------------------------------
+eclipse.buildId=4.7.0-vfinal-2017-09-29T14:34:02Z-Typesafe
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+This is a continuation of log file /home/ubuntu/workspace/.metadata/.bak_0.log
+Created Time: 2018-11-22 17:40:26.916
+
+!ENTRY org.eclipse.ui 4 0 2018-11-22 17:40:26.916
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalStateException: FormToolkit has been disposed
+	at org.eclipse.ui.forms.widgets.FormToolkit.checkDisposed(FormToolkit.java:998)
+	at org.eclipse.ui.forms.widgets.FormToolkit.getBorderStyle(FormToolkit.java:861)
+	at org.eclipse.ui.forms.widgets.FormToolkit$BorderPainter.paintControl(FormToolkit.java:133)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:231)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5268)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1348)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1357)
+	at org.eclipse.swt.widgets.Control.gtk_draw(Control.java:3431)
+	at org.eclipse.swt.widgets.Composite.gtk_draw(Composite.java:351)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1938)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6169)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5528)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:9253)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1252)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2112)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
+
+!ENTRY org.eclipse.ui 4 0 2018-11-22 17:40:26.918
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalStateException: FormToolkit has been disposed
+	at org.eclipse.ui.forms.widgets.FormToolkit.checkDisposed(FormToolkit.java:998)
+	at org.eclipse.ui.forms.widgets.FormToolkit.getBorderStyle(FormToolkit.java:861)
+	at org.eclipse.ui.forms.widgets.FormToolkit$BorderPainter.paintControl(FormToolkit.java:133)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:231)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5268)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1348)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1357)
+	at org.eclipse.swt.widgets.Control.gtk_draw(Control.java:3431)
+	at org.eclipse.swt.widgets.Composite.gtk_draw(Composite.java:351)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1938)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6169)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5528)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:9253)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1252)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2112)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
+
+!ENTRY org.eclipse.ui 4 0 2018-11-22 17:40:26.920
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalStateException: FormToolkit has been disposed
+	at org.eclipse.ui.forms.widgets.FormToolkit.checkDisposed(FormToolkit.java:998)
+	at org.eclipse.ui.forms.widgets.FormToolkit.getBorderStyle(FormToolkit.java:861)
+	at org.eclipse.ui.forms.widgets.FormToolkit$BorderPainter.paintControl(FormToolkit.java:133)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:231)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5268)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1348)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1357)
+	at org.eclipse.swt.widgets.Control.gtk_draw(Control.java:3431)
+	at org.eclipse.swt.widgets.Composite.gtk_draw(Composite.java:351)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1938)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6169)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5528)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:9253)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1252)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2112)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
+
+!ENTRY org.eclipse.ui 4 0 2018-11-22 17:40:26.923
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalStateException: FormToolkit has been disposed
+	at org.eclipse.ui.forms.widgets.FormToolkit.checkDisposed(FormToolkit.java:998)
+	at org.eclipse.ui.forms.widgets.FormToolkit.getBorderStyle(FormToolkit.java:861)
+	at org.eclipse.ui.forms.widgets.FormToolkit$BorderPainter.paintControl(FormToolkit.java:133)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:231)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5268)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1348)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1357)
+	at org.eclipse.swt.widgets.Control.gtk_draw(Control.java:3431)
+	at org.eclipse.swt.widgets.Composite.gtk_draw(Composite.java:351)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1938)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6169)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5528)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:9253)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1252)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2112)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
+
+!ENTRY org.eclipse.ui 4 0 2018-11-22 17:40:26.926
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalStateException: FormToolkit has been disposed
+	at org.eclipse.ui.forms.widgets.FormToolkit.checkDisposed(FormToolkit.java:998)
+	at org.eclipse.ui.forms.widgets.FormToolkit.getBorderStyle(FormToolkit.java:861)
+	at org.eclipse.ui.forms.widgets.FormToolkit$BorderPainter.paintControl(FormToolkit.java:133)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:231)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5268)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1348)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1357)
+	at org.eclipse.swt.widgets.Control.gtk_draw(Control.java:3431)
+	at org.eclipse.swt.widgets.Composite.gtk_draw(Composite.java:351)
+	at org.eclipse.swt.widgets.Canvas.gtk_draw(Canvas.java:178)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1938)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6169)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5528)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:9253)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1252)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2112)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
+
+!ENTRY org.eclipse.ui 4 0 2018-11-22 17:40:26.926
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalStateException: FormToolkit has been disposed
+	at org.eclipse.ui.forms.widgets.FormToolkit.checkDisposed(FormToolkit.java:998)
+	at org.eclipse.ui.forms.widgets.FormToolkit.getBorderStyle(FormToolkit.java:861)
+	at org.eclipse.ui.forms.widgets.FormToolkit$BorderPainter.paintControl(FormToolkit.java:133)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:231)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5268)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1348)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1357)
+	at org.eclipse.swt.widgets.Control.gtk_draw(Control.java:3431)
+	at org.eclipse.swt.widgets.Composite.gtk_draw(Composite.java:351)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1938)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6169)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5528)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:9253)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1252)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2112)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
+
+!ENTRY org.eclipse.ui 4 0 2018-11-22 17:40:26.930
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalStateException: FormToolkit has been disposed
+	at org.eclipse.ui.forms.widgets.FormToolkit.checkDisposed(FormToolkit.java:998)
+	at org.eclipse.ui.forms.widgets.FormToolkit.getBorderStyle(FormToolkit.java:861)
+	at org.eclipse.ui.forms.widgets.FormToolkit$BorderPainter.paintControl(FormToolkit.java:133)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:231)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5268)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1348)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1357)
+	at org.eclipse.swt.widgets.Control.gtk_draw(Control.java:3431)
+	at org.eclipse.swt.widgets.Composite.gtk_draw(Composite.java:351)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1938)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6169)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5528)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:9253)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1252)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2112)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
+
+!ENTRY org.eclipse.ui 4 0 2018-11-22 17:40:26.934
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalStateException: FormToolkit has been disposed
+	at org.eclipse.ui.forms.widgets.FormToolkit.checkDisposed(FormToolkit.java:998)
+	at org.eclipse.ui.forms.widgets.FormToolkit.getBorderStyle(FormToolkit.java:861)
+	at org.eclipse.ui.forms.widgets.FormToolkit$BorderPainter.paintControl(FormToolkit.java:133)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:231)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5268)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1348)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1357)
+	at org.eclipse.swt.widgets.Control.gtk_draw(Control.java:3431)
+	at org.eclipse.swt.widgets.Composite.gtk_draw(Composite.java:351)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1938)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6169)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5528)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:9253)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1252)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2112)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
+
+!ENTRY org.eclipse.ui 4 0 2018-11-22 17:40:26.965
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalStateException: FormToolkit has been disposed
+	at org.eclipse.ui.forms.widgets.FormToolkit.checkDisposed(FormToolkit.java:998)
+	at org.eclipse.ui.forms.widgets.FormToolkit.getBorderStyle(FormToolkit.java:861)
+	at org.eclipse.ui.forms.widgets.FormToolkit$BorderPainter.paintControl(FormToolkit.java:133)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:231)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5268)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1348)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1357)
+	at org.eclipse.swt.widgets.Control.gtk_draw(Control.java:3431)
+	at org.eclipse.swt.widgets.Composite.gtk_draw(Composite.java:351)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1938)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6169)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5528)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:9253)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1252)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2112)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
+
+!ENTRY org.eclipse.ui 4 0 2018-11-22 17:40:26.967
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalStateException: FormToolkit has been disposed
+	at org.eclipse.ui.forms.widgets.FormToolkit.checkDisposed(FormToolkit.java:998)
+	at org.eclipse.ui.forms.widgets.FormToolkit.getBorderStyle(FormToolkit.java:861)
+	at org.eclipse.ui.forms.widgets.FormToolkit$BorderPainter.paintControl(FormToolkit.java:133)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:231)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5268)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1348)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1357)
+	at org.eclipse.swt.widgets.Control.gtk_draw(Control.java:3431)
+	at org.eclipse.swt.widgets.Composite.gtk_draw(Composite.java:351)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1938)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6169)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5528)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:9253)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1252)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2112)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
+
+!ENTRY org.eclipse.ui 4 0 2018-11-22 17:40:26.968
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalStateException: FormToolkit has been disposed
+	at org.eclipse.ui.forms.widgets.FormToolkit.checkDisposed(FormToolkit.java:998)
+	at org.eclipse.ui.forms.widgets.FormToolkit.getBorderStyle(FormToolkit.java:861)
+	at org.eclipse.ui.forms.widgets.FormToolkit$BorderPainter.paintControl(FormToolkit.java:133)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:231)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5268)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1348)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1357)
+	at org.eclipse.swt.widgets.Control.gtk_draw(Control.java:3431)
+	at org.eclipse.swt.widgets.Composite.gtk_draw(Composite.java:351)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1938)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6169)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5528)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:9253)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1252)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2112)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
+
+!ENTRY org.eclipse.ui 4 0 2018-11-22 17:40:26.970
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalStateException: FormToolkit has been disposed
+	at org.eclipse.ui.forms.widgets.FormToolkit.checkDisposed(FormToolkit.java:998)
+	at org.eclipse.ui.forms.widgets.FormToolkit.getBorderStyle(FormToolkit.java:861)
+	at org.eclipse.ui.forms.widgets.FormToolkit$BorderPainter.paintControl(FormToolkit.java:133)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:231)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5268)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1348)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1357)
+	at org.eclipse.swt.widgets.Control.gtk_draw(Control.java:3431)
+	at org.eclipse.swt.widgets.Composite.gtk_draw(Composite.java:351)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1938)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6169)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5528)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:9253)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1252)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2112)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
+
+!ENTRY org.eclipse.ui 4 0 2018-11-22 17:40:26.973
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalStateException: FormToolkit has been disposed
+	at org.eclipse.ui.forms.widgets.FormToolkit.checkDisposed(FormToolkit.java:998)
+	at org.eclipse.ui.forms.widgets.FormToolkit.getBorderStyle(FormToolkit.java:861)
+	at org.eclipse.ui.forms.widgets.FormToolkit$BorderPainter.paintControl(FormToolkit.java:133)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:231)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5268)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1348)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1357)
+	at org.eclipse.swt.widgets.Control.gtk_draw(Control.java:3431)
+	at org.eclipse.swt.widgets.Composite.gtk_draw(Composite.java:351)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1938)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6169)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5528)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:9253)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1252)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2112)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
+
+!ENTRY org.eclipse.ui 4 0 2018-11-22 17:40:26.975
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalStateException: FormToolkit has been disposed
+	at org.eclipse.ui.forms.widgets.FormToolkit.checkDisposed(FormToolkit.java:998)
+	at org.eclipse.ui.forms.widgets.FormToolkit.getBorderStyle(FormToolkit.java:861)
+	at org.eclipse.ui.forms.widgets.FormToolkit$BorderPainter.paintControl(FormToolkit.java:133)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:231)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5268)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1348)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1357)
+	at org.eclipse.swt.widgets.Control.gtk_draw(Control.java:3431)
+	at org.eclipse.swt.widgets.Composite.gtk_draw(Composite.java:351)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1938)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6169)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5528)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:9253)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1252)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2112)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
+
+!ENTRY org.eclipse.ui 4 0 2018-11-22 17:40:26.980
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalStateException: FormToolkit has been disposed
+	at org.eclipse.ui.forms.widgets.FormToolkit.checkDisposed(FormToolkit.java:998)
+	at org.eclipse.ui.forms.widgets.FormToolkit.getBorderStyle(FormToolkit.java:861)
+	at org.eclipse.ui.forms.widgets.FormToolkit$BorderPainter.paintControl(FormToolkit.java:133)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:231)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5268)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1348)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1357)
+	at org.eclipse.swt.widgets.Control.gtk_draw(Control.java:3431)
+	at org.eclipse.swt.widgets.Composite.gtk_draw(Composite.java:351)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1938)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6169)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5528)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:9253)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1252)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2112)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
+
+!ENTRY org.eclipse.ui 4 0 2018-11-22 17:40:26.983
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalStateException: FormToolkit has been disposed
+	at org.eclipse.ui.forms.widgets.FormToolkit.checkDisposed(FormToolkit.java:998)
+	at org.eclipse.ui.forms.widgets.FormToolkit.getBorderStyle(FormToolkit.java:861)
+	at org.eclipse.ui.forms.widgets.FormToolkit$BorderPainter.paintControl(FormToolkit.java:133)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:231)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5268)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1348)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1357)
+	at org.eclipse.swt.widgets.Control.gtk_draw(Control.java:3431)
+	at org.eclipse.swt.widgets.Composite.gtk_draw(Composite.java:351)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1938)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6169)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5528)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:9253)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1252)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2112)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
+
+!ENTRY org.scala-ide.sdt.core 4 0 2018-11-22 19:44:28.445
+!MESSAGE AT: RangePosition(/home/ubuntu/workspace/Spark_scala4/spark/src/main/java/jitesh/spark/tweet.scala, 793, 798, 802)
+!STACK 0
+scala.reflect.internal.FatalError: class Quasiquote does not have a member api
+	at scala.reflect.internal.Definitions$DefinitionsClass.fatalMissingSymbol(Definitions.scala:1238)
+	at scala.reflect.internal.Definitions$DefinitionsClass.$anonfun$getMember$1(Definitions.scala:1261)
+	at scala.reflect.internal.Definitions$DefinitionsClass.getMember(Definitions.scala:1256)
+	at scala.reflect.internal.Definitions$DefinitionsClass.QuasiquoteClass_api$lzycompute(Definitions.scala:534)
+	at scala.reflect.internal.Definitions$DefinitionsClass.QuasiquoteClass_api(Definitions.scala:534)
+	at scala.reflect.internal.Definitions$DefinitionsClass.QuasiquoteClass_api_apply$lzycompute(Definitions.scala:535)
+	at scala.reflect.internal.Definitions$DefinitionsClass.QuasiquoteClass_api_apply(Definitions.scala:535)
+	at scala.tools.reflect.FastTrack.$anonfun$fastTrackCache$1(FastTrack.scala:55)
+	at scala.reflect.internal.SymbolTable$perRunCaches$$anon$1.apply(SymbolTable.scala:401)
+	at scala.tools.reflect.FastTrack.get(FastTrack.scala:22)
+	at scala.tools.nsc.typechecker.Macros.standardIsBlackbox(Macros.scala:290)
+	at scala.tools.nsc.typechecker.Macros.standardIsBlackbox$(Macros.scala:289)
+	at org.scalaide.core.internal.compiler.ScalaPresentationCompiler$$anon$1.standardIsBlackbox(ScalaPresentationCompiler.scala:72)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins$$anon$9.default(AnalyzerPlugins.scala:392)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins$$anon$9.default(AnalyzerPlugins.scala:389)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.invoke(AnalyzerPlugins.scala:369)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsIsBlackbox(AnalyzerPlugins.scala:389)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsIsBlackbox$(AnalyzerPlugins.scala:389)
+	at org.scalaide.core.internal.compiler.ScalaPresentationCompiler$$anon$1.pluginsIsBlackbox(ScalaPresentationCompiler.scala:72)
+	at scala.tools.nsc.typechecker.Macros.isBlackbox(Macros.scala:284)
+	at scala.tools.nsc.typechecker.Macros.isBlackbox$(Macros.scala:284)
+	at org.scalaide.core.internal.compiler.ScalaPresentationCompiler$$anon$1.isBlackbox(ScalaPresentationCompiler.scala:72)
+	at scala.tools.nsc.typechecker.Implicits$ImplicitSearch.typedImplicit1(Implicits.scala:649)
+	at scala.tools.nsc.typechecker.Implicits$ImplicitSearch.typedImplicit0(Implicits.scala:628)
+	at scala.tools.nsc.typechecker.Implicits$ImplicitSearch.scala$tools$nsc$typechecker$Implicits$ImplicitSearch$$typedImplicit(Implicits.scala:496)
+	at scala.tools.nsc.typechecker.Implicits$ImplicitSearch$ImplicitComputation.rankImplicits(Implicits.scala:947)
+	at scala.tools.nsc.typechecker.Implicits$ImplicitSearch$ImplicitComputation.findBest(Implicits.scala:975)
+	at scala.tools.nsc.typechecker.Implicits$ImplicitSearch.searchImplicit(Implicits.scala:1032)
+	at scala.tools.nsc.typechecker.Implicits$ImplicitSearch.bestImplicit(Implicits.scala:1392)
+	at scala.tools.nsc.typechecker.Implicits.inferImplicit(Implicits.scala:92)
+	at scala.tools.nsc.typechecker.Implicits.inferImplicit$(Implicits.scala:81)
+	at org.scalaide.core.internal.compiler.ScalaPresentationCompiler$$anon$1.inferImplicit(ScalaPresentationCompiler.scala:72)
+	at scala.tools.nsc.typechecker.Implicits.inferImplicitView(Implicits.scala:43)
+	at scala.tools.nsc.typechecker.Implicits.inferImplicitView$(Implicits.scala:42)
+	at org.scalaide.core.internal.compiler.ScalaPresentationCompiler$$anon$1.inferImplicitView(ScalaPresentationCompiler.scala:72)
+	at scala.tools.nsc.typechecker.Typers$Typer.inferView(Typers.scala:233)
+	at scala.tools.nsc.typechecker.Typers$Typer.adaptToMember(Typers.scala:1271)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$adaptToMemberWithArgs$7(Typers.scala:1321)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$silent$2(Typers.scala:713)
+	at scala.tools.nsc.typechecker.Typers$Typer.silent(Typers.scala:713)
+	at scala.tools.nsc.typechecker.Typers$Typer.adaptToMemberWithArgs(Typers.scala:1321)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedSelectInternal$1(Typers.scala:4894)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedSelect$1(Typers.scala:4867)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedSelectOrSuperCall$1(Typers.scala:5006)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInAnyMode$1(Typers.scala:5537)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5553)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5589)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5619)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5563)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5567)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typed1$38(Typers.scala:4697)
+	at scala.tools.nsc.typechecker.Typers$Typer.silent(Typers.scala:699)
+	at scala.tools.nsc.typechecker.Typers$Typer.normalTypedApply$1(Typers.scala:4699)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedApply$1(Typers.scala:4746)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInAnyMode$1(Typers.scala:5536)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5553)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5589)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5619)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5563)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5567)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedAnnotated$1(Typers.scala:4217)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedOutsidePatternMode$1(Typers.scala:5520)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInAnyMode$1(Typers.scala:5546)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5553)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5589)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5619)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5563)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5567)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedByValueExpr(Typers.scala:5650)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedMatch(Typers.scala:2543)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedVirtualizedMatch$1(Typers.scala:4434)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedOutsidePatternMode$1(Typers.scala:5515)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInAnyMode$1(Typers.scala:5546)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5553)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5589)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5619)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5563)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5567)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5661)
+	at scala.tools.nsc.typechecker.Typers$Typer.computeType(Typers.scala:5749)
+	at scala.tools.nsc.typechecker.Namers$Namer.assignTypeToTree(Namers.scala:1068)
+	at scala.tools.nsc.typechecker.Namers$Namer.valDefSig(Namers.scala:1617)
+	at scala.tools.nsc.typechecker.Namers$Namer.memberSig(Namers.scala:1786)
+	at scala.tools.nsc.typechecker.Namers$Namer.typeSig(Namers.scala:1751)
+	at scala.tools.nsc.typechecker.Namers$Namer$MonoTypeCompleter.completeImpl(Namers.scala:836)
+	at scala.tools.nsc.typechecker.Namers$LockingTypeCompleter.complete(Namers.scala:1948)
+	at scala.tools.nsc.typechecker.Namers$LockingTypeCompleter.complete$(Namers.scala:1946)
+	at scala.tools.nsc.typechecker.Namers$TypeCompleterBase.complete(Namers.scala:1941)
+	at scala.reflect.internal.Symbols$Symbol.info(Symbols.scala:1531)
+	at scala.reflect.internal.Symbols$Symbol.initialize(Symbols.scala:1679)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5195)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5589)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5619)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5563)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5567)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedByValueExpr(Typers.scala:5650)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:3075)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$10(Typers.scala:3220)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3220)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedBlock(Typers.scala:2452)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typed1$98(Typers.scala:5511)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typerWithLocalContext$1(Typers.scala:487)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedOutsidePatternMode$1(Typers.scala:487)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInAnyMode$1(Typers.scala:5546)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5553)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5589)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5619)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5563)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5567)
+	at scala.tools.nsc.typechecker.Typers$Typer.transformedOrTyped(Typers.scala:5801)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedDefDef(Typers.scala:2283)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedMemberDef$1(Typers.scala:5501)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5552)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5589)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5619)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5563)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5567)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedByValueExpr(Typers.scala:5650)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:3075)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$10(Typers.scala:3220)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3220)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:1983)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedModuleDef(Typers.scala:1854)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedMemberDef$1(Typers.scala:5503)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5552)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5589)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5619)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5563)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5567)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedByValueExpr(Typers.scala:5650)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:3075)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$10(Typers.scala:3220)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3220)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5202)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedMemberDef$1(Typers.scala:5505)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5552)
+	at scala.tools.nsc.typechecker.Typers$Typer.runTyper$1(Typers.scala:5589)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedInternal(Typers.scala:5619)
+	at scala.tools.nsc.typechecker.Typers$Typer.body$2(Typers.scala:5563)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5567)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5646)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$$anon$3.apply(Analyzer.scala:102)
+	at scala.tools.nsc.Global$GlobalPhase.$anonfun$applyPhase$1(Global.scala:426)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:419)
+	at scala.tools.nsc.interactive.Global$TyperRun.$anonfun$applyPhase$1(Global.scala:1327)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1327)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1320)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:657)
+	at scala.tools.nsc.interactive.Global.$anonfun$backgroundCompile$7(Global.scala:572)
+	at scala.tools.nsc.interactive.Global.$anonfun$backgroundCompile$6(Global.scala:568)
+	at scala.tools.nsc.interactive.Global.$anonfun$backgroundCompile$6$adapted(Global.scala:568)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:789)
+	at scala.collection.immutable.List.foreach(List.scala:389)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:788)
+	at scala.tools.nsc.interactive.Global.backgroundCompile(Global.scala:568)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:25)
+!SESSION 2018-11-23 05:35:15.291 -----------------------------------------------
+eclipse.buildId=4.7.0-vfinal-2017-09-29T14:34:02Z-Typesafe
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-11-23 05:35:22.366
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2018-11-23 05:35:29.406
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-11-23 05:35:29.406
+!MESSAGE A conflict occurred for CTRL+F4:
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.eclipse.ui.file.close,Close,
+		Close the active editor,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@69db3d64,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.scala.tools.eclipse.search.commands.OpenTypeHierarchy,Open Type Hierarchy,
+		Open Type Hierarchy,
+		Category(org.scala.tools.eclipse.search.commands,Search - Scala,Search - Scala,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4bc25b28,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2018-12-14 04:54:39.329 -----------------------------------------------
+eclipse.buildId=4.7.0-vfinal-2017-09-29T14:34:02Z-Typesafe
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-12-14 04:54:46.619
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2018-12-14 04:54:54.114
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-12-14 04:54:54.114
+!MESSAGE A conflict occurred for CTRL+F4:
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.eclipse.ui.file.close,Close,
+		Close the active editor,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@237ed485,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.scala.tools.eclipse.search.commands.OpenTypeHierarchy,Open Type Hierarchy,
+		Open Type Hierarchy,
+		Category(org.scala.tools.eclipse.search.commands,Search - Scala,Search - Scala,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1c74e0c6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.scala-ide.sdt.core 1 0 2018-12-14 04:55:58.169
+!MESSAGE Timeout in askOption
+!STACK 0
+java.lang.Throwable
+	at org.scalaide.core.compiler.IScalaPresentationCompiler$Implicits$RichResponse$.getOption$extension(IScalaPresentationCompiler.scala:342)
+	at org.scalaide.core.internal.compiler.Scaladoc.withFragments$1(ScalaDoc.scala:55)
+	at org.scalaide.core.internal.compiler.Scaladoc.$anonfun$parsedDocComment$7(ScalaDoc.scala:61)
+	at scala.Option.flatMap(Option.scala:171)
+	at org.scalaide.core.internal.compiler.Scaladoc.$anonfun$parsedDocComment$2(ScalaDoc.scala:60)
+	at org.scalaide.core.compiler.InteractiveCompilationUnit.$anonfun$withSourceFile$1(InteractiveCompilationUnit.scala:201)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.$anonfun$internal$5(PresentationCompilerProxy.scala:101)
+	at scala.Option.flatMap(Option.scala:171)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
+	at org.scalaide.core.compiler.InteractiveCompilationUnit.withSourceFile(InteractiveCompilationUnit.scala:201)
+	at org.scalaide.core.compiler.InteractiveCompilationUnit.withSourceFile$(InteractiveCompilationUnit.scala:200)
+	at org.scalaide.core.internal.jdt.model.ScalaClassFile.withSourceFile(ScalaClassFile.scala:26)
+	at org.scalaide.core.internal.compiler.Scaladoc.$anonfun$parsedDocComment$1(ScalaDoc.scala:48)
+	at scala.Option.map(Option.scala:146)
+	at org.scalaide.core.internal.compiler.Scaladoc.parsedDocComment(ScalaDoc.scala:48)
+	at org.scalaide.core.internal.compiler.Scaladoc.parsedDocComment$(ScalaDoc.scala:45)
+	at org.scalaide.core.internal.compiler.ScalaPresentationCompiler.parsedDocComment(ScalaPresentationCompiler.scala:54)
+	at org.scalaide.ui.internal.editor.hover.ScalaHoverImpl.$anonfun$getHoverInfo2$25(ScalaHoverImpl.scala:227)
+	at scala.Option$WithFilter.flatMap(Option.scala:171)
+	at org.scalaide.ui.internal.editor.hover.ScalaHoverImpl.docComment$lzycompute$1(ScalaHoverImpl.scala:226)
+	at org.scalaide.ui.internal.editor.hover.ScalaHoverImpl.docComment$1(ScalaHoverImpl.scala:205)
+	at org.scalaide.ui.internal.editor.hover.ScalaHoverImpl.$anonfun$getHoverInfo2$2(ScalaHoverImpl.scala:238)
+	at org.scalaide.core.compiler.InteractiveCompilationUnit.$anonfun$withSourceFile$1(InteractiveCompilationUnit.scala:201)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.$anonfun$internal$5(PresentationCompilerProxy.scala:101)
+	at scala.Option.flatMap(Option.scala:171)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
+	at org.scalaide.core.compiler.InteractiveCompilationUnit.withSourceFile(InteractiveCompilationUnit.scala:201)
+	at org.scalaide.core.compiler.InteractiveCompilationUnit.withSourceFile$(InteractiveCompilationUnit.scala:200)
+	at org.scalaide.core.internal.jdt.model.ScalaSourceFile.withSourceFile(ScalaSourceFile.scala:71)
+	at org.scalaide.ui.internal.editor.hover.ScalaHoverImpl.$anonfun$getHoverInfo2$1(ScalaHoverImpl.scala:103)
+	at scala.Option.map(Option.scala:146)
+	at org.scalaide.ui.internal.editor.hover.ScalaHoverImpl.getHoverInfo2(ScalaHoverImpl.scala:101)
+	at org.scalaide.debug.internal.editor.TextHoverFactory$$anon$1.super$getHoverInfo2(TextHoverFactory.scala:53)
+	at org.scalaide.debug.internal.editor.TextHoverFactory$$anon$1.$anonfun$getHoverInfo2$6(TextHoverFactory.scala:53)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.scalaide.debug.internal.editor.TextHoverFactory$$anon$1.$anonfun$getHoverInfo2$1(TextHoverFactory.scala:51)
+	at scala.Option.map(Option.scala:146)
+	at org.scalaide.debug.internal.editor.TextHoverFactory$$anon$1.getHoverInfo2(TextHoverFactory.scala:37)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SESSION 2018-12-22 19:52:46.333 -----------------------------------------------
+eclipse.buildId=4.7.0-vfinal-2017-09-29T14:34:02Z-Typesafe
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-12-22 19:52:54.024
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2018-12-22 19:53:01.328
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-12-22 19:53:01.328
+!MESSAGE A conflict occurred for CTRL+F4:
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.eclipse.ui.file.close,Close,
+		Close the active editor,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5449373d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.scala.tools.eclipse.search.commands.OpenTypeHierarchy,Open Type Hierarchy,
+		Open Type Hierarchy,
+		Category(org.scala.tools.eclipse.search.commands,Search - Scala,Search - Scala,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@170cde12,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2018-12-23 07:51:29.608 -----------------------------------------------
+eclipse.buildId=4.7.0-vfinal-2017-09-29T14:34:02Z-Typesafe
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-12-23 07:51:44.080
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2018-12-23 07:51:51.922
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-12-23 07:51:51.922
+!MESSAGE A conflict occurred for CTRL+F4:
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.eclipse.ui.file.close,Close,
+		Close the active editor,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1856ce9a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.scala.tools.eclipse.search.commands.OpenTypeHierarchy,Open Type Hierarchy,
+		Open Type Hierarchy,
+		Category(org.scala.tools.eclipse.search.commands,Search - Scala,Search - Scala,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5a556b8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2018-12-23 14:14:29.678 -----------------------------------------------
+eclipse.buildId=4.7.0-vfinal-2017-09-29T14:34:02Z-Typesafe
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-12-23 14:14:41.753
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2018-12-23 14:14:48.066
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-12-23 14:14:48.066
+!MESSAGE A conflict occurred for CTRL+F4:
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.eclipse.ui.file.close,Close,
+		Close the active editor,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4c6f03b3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.scala.tools.eclipse.search.commands.OpenTypeHierarchy,Open Type Hierarchy,
+		Open Type Hierarchy,
+		Category(org.scala.tools.eclipse.search.commands,Search - Scala,Search - Scala,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3dbc6e59,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2018-12-25 07:30:45.300 -----------------------------------------------
+eclipse.buildId=4.7.0-vfinal-2017-09-29T14:34:02Z-Typesafe
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-12-25 07:32:19.566
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2018-12-25 07:32:25.971
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-12-25 07:32:25.971
+!MESSAGE A conflict occurred for CTRL+F4:
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.eclipse.ui.file.close,Close,
+		Close the active editor,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6749fd11,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.scala.tools.eclipse.search.commands.OpenTypeHierarchy,Open Type Hierarchy,
+		Open Type Hierarchy,
+		Category(org.scala.tools.eclipse.search.commands,Search - Scala,Search - Scala,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4fa00a36,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2018-12-25 12:21:03.166 -----------------------------------------------
+eclipse.buildId=4.7.0-vfinal-2017-09-29T14:34:02Z-Typesafe
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-12-25 12:21:10.832
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2018-12-25 12:21:17.454
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-12-25 12:21:17.454
+!MESSAGE A conflict occurred for CTRL+F4:
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.eclipse.ui.file.close,Close,
+		Close the active editor,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@18960ae4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.scala.tools.eclipse.search.commands.OpenTypeHierarchy,Open Type Hierarchy,
+		Open Type Hierarchy,
+		Category(org.scala.tools.eclipse.search.commands,Search - Scala,Search - Scala,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3a76ed9b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2018-12-30 14:50:33.306 -----------------------------------------------
+eclipse.buildId=4.7.0-vfinal-2017-09-29T14:34:02Z-Typesafe
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-12-30 14:50:41.723
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2018-12-30 14:50:48.282
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-12-30 14:50:48.282
+!MESSAGE A conflict occurred for CTRL+F4:
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.eclipse.ui.file.close,Close,
+		Close the active editor,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@c42c48f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.scala.tools.eclipse.search.commands.OpenTypeHierarchy,Open Type Hierarchy,
+		Open Type Hierarchy,
+		Category(org.scala.tools.eclipse.search.commands,Search - Scala,Search - Scala,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@744da685,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2018-12-31 17:45:25.685 -----------------------------------------------
+eclipse.buildId=4.7.0-vfinal-2017-09-29T14:34:02Z-Typesafe
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-12-31 17:47:45.061
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2018-12-31 17:47:51.812
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-12-31 17:47:51.812
+!MESSAGE A conflict occurred for CTRL+F4:
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.eclipse.ui.file.close,Close,
+		Close the active editor,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3e163fd2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.scala.tools.eclipse.search.commands.OpenTypeHierarchy,Open Type Hierarchy,
+		Open Type Hierarchy,
+		Category(org.scala.tools.eclipse.search.commands,Search - Scala,Search - Scala,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@53056415,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2019-01-01 18:19:06.374 -----------------------------------------------
+eclipse.buildId=4.7.0-vfinal-2017-09-29T14:34:02Z-Typesafe
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-01-01 18:19:33.296
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2019-01-01 18:19:40.125
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-01-01 18:19:40.125
+!MESSAGE A conflict occurred for CTRL+F4:
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.eclipse.ui.file.close,Close,
+		Close the active editor,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6c0054ab,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.scala.tools.eclipse.search.commands.OpenTypeHierarchy,Open Type Hierarchy,
+		Open Type Hierarchy,
+		Category(org.scala.tools.eclipse.search.commands,Search - Scala,Search - Scala,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5818f3a7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2019-01-06 12:54:13.493 -----------------------------------------------
+eclipse.buildId=4.7.0-vfinal-2017-09-29T14:34:02Z-Typesafe
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-01-06 12:57:43.040
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2019-01-06 12:57:49.913
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-01-06 12:57:49.913
+!MESSAGE A conflict occurred for CTRL+F4:
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.eclipse.ui.file.close,Close,
+		Close the active editor,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6217b7f8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.scala.tools.eclipse.search.commands.OpenTypeHierarchy,Open Type Hierarchy,
+		Open Type Hierarchy,
+		Category(org.scala.tools.eclipse.search.commands,Search - Scala,Search - Scala,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@61ee49ed,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.scala-ide.sdt.core 4 0 2019-01-06 20:04:13.996
+!MESSAGE Throwable during asyncExec
+!STACK 0
+scala.reflect.internal.FatalError: ThisType(method main) for sym which is not a class
+	at scala.reflect.internal.Reporting.abort(Reporting.scala:61)
+	at scala.reflect.internal.Reporting.abort$(Reporting.scala:57)
+	at scala.reflect.internal.SymbolTable.abort(SymbolTable.scala:16)
+	at scala.reflect.internal.Types$ThisType.<init>(Types.scala:1181)
+	at scala.reflect.internal.Types$UniqueThisType.<init>(Types.scala:1201)
+	at scala.reflect.internal.Types$ThisType$.apply(Types.scala:1205)
+	at scala.tools.nsc.interactive.Global.findMirrorSymbol(Global.scala:862)
+	at scala.tools.nsc.interactive.Global.$anonfun$getDocComment$5$adapted(Global.scala:935)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:789)
+	at scala.collection.immutable.List.foreach(List.scala:389)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:788)
+	at scala.tools.nsc.interactive.Global.$anonfun$getDocComment$3(Global.scala:934)
+	at scala.tools.nsc.interactive.Global.$anonfun$getDocComment$2(Global.scala:846)
+	at scala.tools.nsc.interactive.Global.$anonfun$respond$1(Global.scala:688)
+	at scala.tools.nsc.interactive.Global.respondGradually(Global.scala:695)
+	at scala.tools.nsc.interactive.Global.respond(Global.scala:688)
+	at scala.tools.nsc.interactive.Global.getDocComment(Global.scala:933)
+	at scala.tools.nsc.interactive.CompilerControl$AskDocCommentItem.apply$mcV$sp(CompilerControl.scala:383)
+	at scala.tools.nsc.interactive.Global.$anonfun$pollForWork$1(Global.scala:493)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:418)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+!SESSION 2019-01-07 12:30:50.597 -----------------------------------------------
+eclipse.buildId=4.7.0-vfinal-2017-09-29T14:34:02Z-Typesafe
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-01-07 12:32:16.490
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2019-01-07 12:32:24.211
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-01-07 12:32:24.211
+!MESSAGE A conflict occurred for CTRL+F4:
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.eclipse.ui.file.close,Close,
+		Close the active editor,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3e0b711d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.scala.tools.eclipse.search.commands.OpenTypeHierarchy,Open Type Hierarchy,
+		Open Type Hierarchy,
+		Category(org.scala.tools.eclipse.search.commands,Search - Scala,Search - Scala,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@46569f05,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)

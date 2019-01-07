@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;twitter/src/com/twitter/twitterstream.scala&apos; to &apos;twitterstr.scala&apos;" description="Rename resource &apos;twitterstream.scala&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/twitter/twitterstream.scala" name="twitterstr.scala" stamp="1542811640121" updateReferences="true"/>
+</session>

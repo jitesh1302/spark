@@ -1,0 +1,64 @@
+package jitesh.spark
+
+import org.apache.spark.SparkConf
+import org.apache.spark.streaming.StreamingContext
+import org.apache.spark.streaming.Seconds
+import twitter4j.conf.ConfigurationBuilder
+import twitter4j.auth.OAuthAuthorization
+import twitter4j.Status
+import org.apache.spark.streaming.twitter.TwitterUtils
+import java.sql.{ Connection, DriverManager }
+
+object tweet {
+
+  val url = "jdbc:mysql://localhost:3306/demo?user=demo&password=demo"
+  val driver = "com.mysql.cj.jdbc.Driver"
+  val username = "demo"
+  val password = "demo"
+  var connection: Connection = _
+
+  def main(args: Array[String]) {
+    if (args.length < 4) {
+      System.err.println("Usage: TwitterData <ConsumerKey><ConsumerSecret><accessToken><accessTokenSecret>" +
+        "[<filters>]")
+      System.exit(1)
+    }
+    val appName = "TwitterData"
+    val conf = new SparkConf()
+    conf.setAppName(appName).setMaster("local[2]")
+    val ssc = new StreamingContext(conf, Seconds(5))
+    val Array(consumerKey, consumerSecret, accessToken, accessTokenSecret) = args.take(4)
+    val filters = args.takeRight(args.length - 4)
+    val cb = new ConfigurationBuilder
+    cb.setDebugEnabled(true).setOAuthConsumerKey(consumerKey)
+      .setOAuthConsumerSecret(consumerSecret)
+      .setOAuthAccessToken(accessToken)
+      .setOAuthAccessTokenSecret(accessTokenSecret)
+    val auth = new OAuthAuthorization(cb.build)
+    val tweets = TwitterUtils.createStream(ssc, Some(auth), filters)
+    tweets.saveAsTextFiles("tweets", "csv")
+    val tweet_print = tweets.map(tuple => "%s,%s,%s,%s,%s".format(
+      tuple.getId,
+      tuple.getCreatedAt, tuple.getSource, tuple.getText.toLowerCase.replaceAll(",", " "), tuple.getGeoLocation)).print
+
+    val tweetstable = tweets.foreachRDD {
+      rdd =>
+        rdd.foreachPartition {
+          it =>
+            val conn = DriverManager.getConnection(url, username, password)
+            val del = conn.prepareStatement("INSERT INTO tweetstable (ID,CreatedAt,Source,Text,GeoLocation) VALUES (?,?,?,?,?)")
+            for (tuple <- it) {
+              del.setLong(1, tuple.getId)
+              del.setString(2, tuple.getCreatedAt.toString)
+              del.setString(3, tuple.getSource)
+              del.setString(4, tuple.getText)
+              del.setString(5, tuple.getGeoLocation.toString)
+              del.executeUpdate
+            }
+        }
+
+    }
+    ssc.start()
+    ssc.awaitTermination()
+  }
+}
